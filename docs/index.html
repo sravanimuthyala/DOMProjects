@@ -10,7 +10,96 @@
     <div class="container">
         <h1>Digital Clock - Indian Standard Time</h1>
         <div id="time">08:17:56</div>
-        <div id="date">11/07/2025</div>
+        <div id="date">11/07/2025<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Library System</h1>
+        </header>
+
+        <main>
+            <!--Button container-->
+            <div class="button-container">
+                <button id="toggle-form" class="toggle-btn">Add New Book</button>
+            </div>
+
+            <section class="add-book-section" style="display:none">
+                <h2>Add New Book</h2>
+                <!--form starts here-->
+
+                <form id="book-form">
+
+                    <!--contains two form groups-->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Title:</label>
+                            <input type="text" id="title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Author:</label>
+                            <input type="text" id="author" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Book Type:</label>
+                        <select id="type">
+                            <option>Physical</option>
+                            <option>E-Book</option>
+                        </select>
+                    </div>
+
+                    <!--form group if e-book is selected-->
+                    <div class="form-group" style="display:none" id="ebook-details">
+                        <label>File Size(MB):</label>
+                        <input type="number" value="1" min="1" id="fileSize">
+                    </div>
+
+                    <button type="submit" class="btn-primary">Add Book</button>
+                </form>
+            </section>
+
+            <!-- Section for adding new books, initially hidden -->
+            <section class="library-section">
+                <h2>Book Collection</h2>
+                <div class="book-grid" id="book-list">
+
+                <!--     <div class="book-card">
+                        <h3 class="book-title">Pride and Prejudice</h3>
+                        <div class="book-meta">Author: Jane Austen</div>
+                        <div class="book-meta">Status: Available</div>
+                        <div class="book-actions">
+                            <button class="btn btn-borrow">Borrow</button>  
+                            <button class="btn btn-remove">Remove</button>
+                        </div>
+                    </div>
+
+                    <div class="book-card ebook">
+                        <h3 class="book-title">Programming Basics</h3>
+                        <div class="book-meta">Author: John Smith</div>
+                        <div class="book-meta">Status: Available</div>
+                        <div class="book-meta">File Size: 3.5 MB</div>
+                        <div class="book-actions">
+                            <button class="btn btn-borrow">Download</button>
+                            <button class="btn btn-remove">Remove</button>
+                        </div>
+                    </div> -->
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>/div>
         <button>Switch to 24-hour format</button>
     </div>
     <script src="script.js"></script>
